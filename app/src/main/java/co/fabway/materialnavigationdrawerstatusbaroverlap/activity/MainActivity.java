@@ -1,4 +1,4 @@
-package co.fabway.materialnavigationdrawerstatusbaroverlap;
+package co.fabway.materialnavigationdrawerstatusbaroverlap.activity;
 
 import android.content.res.Configuration;
 import android.support.v4.widget.DrawerLayout;
@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import co.fabway.materialnavigationdrawerstatusbaroverlap.R;
 
 
 public class MainActivity extends ActionBarActivity {
