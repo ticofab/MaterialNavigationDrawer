@@ -6,13 +6,21 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <!-- The main content view -->
-    <FrameLayout
+    <!-- Your main content -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" />
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
 
-    <!-- Your main content -->
+        <include layout="@layout/toolbar" />
+
+        <!-- Main layout -->
+        <FrameLayout
+            android:id="@+id/main_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
 
     <!-- The navigation drawer -->
     <co.fabway.materialnavigationdrawerstatusbaroverlap.view.ScrimInsetsFrameLayout
